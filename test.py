@@ -11,8 +11,8 @@ class Book:
         self.author = author
         self.description = description
         self.rating = rating
-        self.published_date=published_date
-
+        self.published_date=published_date2
+        
 class BookRequest(BaseModel):
     id:Optional[int] = None 
     title:str = Field(min_length=1, description="The title of the book")
